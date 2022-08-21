@@ -1,13 +1,3 @@
-/* reCaptcha */
-
-#g-recaptcha-response {
-    display: block !important;
-    position: absolute;
-    margin: -50px 0 0 0 !important;
-    z-index: -999999;
-    opacity: 1;
-}
-
 /* header */
 
 #header {
@@ -403,4 +393,10 @@
 #p5 .right button:hover {
     cursor: pointer;
     background-color: rgba(231, 246, 242, 0.25);
+}
+
+/* reCaptcha */
+
+#g-recaptcha-response {
+    display: inline block !important;
 }

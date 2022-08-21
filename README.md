@@ -10,5 +10,7 @@ My personal portfolio to track my progress over my development journey.
     * Setup project
     * Add Home, Skills, Projects, Intership and Contact page
     * Contact page is secure with reCaptcha V2
-    * Powered with <a href="https://github.com/alvarotrigo/fullpage.js">fullpage.js</a>
-    * Powered with <a href="https://animate.style/">animation.style</a>
+    * Powered with <a href="https://github.com/alvarotrigo/fullpage.js" target="_blank">fullpage.js</a>
+    * Powered with <a href="https://animate.style/" target="_blank">animation.style</a>
+
+

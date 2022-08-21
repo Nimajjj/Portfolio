@@ -77,6 +77,13 @@ let fullPage = new fullpage('#fullpage', {
 
             page.querySelector(".right").classList.add("animate__animated", "animate__fadeInRight");
             page.querySelector(".left").classList.add("animate__animated", "animate__fadeInLeft");
+
+            let progress = page.querySelectorAll(".progress");
+            if (progress.length > 0) {
+                progress.forEach((skill) => {
+                    increase(skill, skill.innerHTML.replace("<p>", "").replace("</p>", ""));
+                });
+            }
         };
 
         if (page.querySelector("#prev_bt") != null) {
@@ -136,13 +143,26 @@ init_gradient();
 
 // progress
 
+function increase(progress, limit) {
+    let SPEED = 40;
+
+    for(let i = 0; i <= parseInt(limit); i++) {
+        setTimeout(() => {
+            progress.innerHTML = "<p>" + i + "%</p>";
+            progress.style.width = i + "%";
+        }, SPEED * i);
+        console.log(progress.style.width);
+    }
+}
+
+
 function init_skills() {
     let progress = document.querySelectorAll(".progress");
     let level = document.querySelectorAll(".skill_level");
 
     for (let i = 0; i < progress.length; i++) {
         let percent = progress[i].innerHTML.replace("<p>", "").replace("</p>", "");
-        progress[i].style.width = percent;
+        progress[i].style.width = 0;
 
         if (i >= level.length) {
             continue;
@@ -155,6 +175,8 @@ function init_skills() {
             background = "linear-gradient(90deg, rgba(104,179,179,1) 0%, rgba(139,240,240,1) 100%)"
         }
         progress[i].style.background = background;
+
+        
     }
 }
 
