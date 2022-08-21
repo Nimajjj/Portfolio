@@ -1,12 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio ben</title>
+    <title>Benjamin Borello</title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="style/fullpage.css">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/74fed0e2b5.js"></script>
+    <script src="lib/fullpage.js" defer></script>
+
+    <script src="script/main.js" defer></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+    <link rel="stylesheet" href="style/normalize.css">
+    <link rel="stylesheet" href="style/main.css">
 </head>
+
 <body>
-    <h1>coucou</h1>
+    
+
+    <div id="fullpage">
+        <section class="section" data-anchor="home" >
+            <nav id="header" style="opacity: 0;">
+                <a data-menuanchor="home" href="#home" class="active">Home</a>
+                <a data-menuanchor="about" href="#about">About</a>
+                <a data-menuanchor="projects" href="#projects">Projects</a>
+                <a data-menuanchor="intership" href="#intership">Intership</a>
+                <a data-menuanchor="contact" href="#contact">Contact</a>
+            </nav>
+
+            <div id="p1">
+                <section id="p1left" class="animate__animated animate__fadeInLeft">
+                    <h2>Hello I'm</h2>
+                    <h1>Benjamin Borello</i></h1>
+                    <p>- Computer Science Student -</p>
+                </section>
+
+                <section class="animate__animated animate__fadeInRight">
+                    <img class="avatar" src="image/avatar.png" alt="">
+                    <h3 style="margin-top: -3vh; font-size: 48px;">↑</h3>
+                    <h3 style="margin-top: -2vh;">me</h3>
+                </section>
+            </div>
+        </section>
+
+        <section class="section" data-anchor="about">
+            <div id="p2">
+                <section class="left">
+                    <h2>About me</h2>
+                    <p>
+                        I am a french computer science student.<br>    
+                        I am studying at Ynov school based in Aix-en-Provence.<br><br>
+                        I love to develop low-level applications and I am used to do game development to train myself into differents languages.
+                    </p>
+                    <h3>You can find me here</h3>
+                    <ul>
+                        <li><a class="hover_effect" target="_blank" href="CV Borello.pdf">CV</a></li>
+                        <li><a class="hover_effect" target="_blank" href="mailto:benjamin.borello@aol.com"><i class="fa-solid fa-envelope"></i></a></li>
+                        <li><a class="hover_effect" target="_blank" href="https://github.com/Nimajjj"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a class="hover_effect" target="_blank" href="https://www.linkedin.com/in/benjamin-borello-89b562220/"><i class="fa-brands fa-linkedin"></i></a></li>
+                    </ul>
+                </section>
+    
+                <section class="right">
+                    <h2>My skills</h2>
+                    <div>
+                        <h3 id="first_h3">I Know</h3>
+                        <ul id="i_know">
+                            <li>
+                                <p>GODOT</p> <p class="skill_level">intermediary</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>50%</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>PYTHON</p> <p class="skill_level">intermediary</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>35%</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>HTML</p> <p class="skill_level">intermediary</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>25%</p></div>
+                                </div>
+                            </li>
+                            <li><p>CSS</p> <p class="skill_level">intermediary</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>20%</p></div>
+                                </div></li>
+                            <li>
+                                <p>C++</p> <p class="skill_level">beginner <span style="font-size: 12px;">↑</span></p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>85%</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>GO</p> <p class="skill_level">beginner</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>75%</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>JS</p> <p class="skill_level">beginner</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>70%</p></div>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <h3>I Learn</h3>
+                        <ul id="i_learn">
+                            <li>
+                                <p>Vim</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>20%</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>Rust</p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>15%</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <p>OpenGL <span style="font-size: 12px;">(C++)</span></p>
+                                <div class="progress_container">
+                                    <div class="progress"><p>10%</p></div>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <h3>I Love</h3>
+                        <ul id="i_love"">
+                            <li>Procedural generation</li>
+                            <li>Physics simultation</li>
+                            <li>Generative art</li>
+                            <li>GODOT</li>
+                            <li>C++</li>
+                            <li>Vim</li>
+                        </ul>
+                    </div>
+                    
+                </section>
+            </div>
+        </section>
+
+        <section class="section" data-anchor="projects">
+            <div id="p3">
+                <p id="prev_bt" class="bt" onclick="previous_page()">
+                    previous
+                </p>
+
+                <div class="carousel">
+                    <h2>Tidder - A Reddit like social media</h2>
+                    <div>
+                        <div class="desc">
+                            <p style="font-size: 32px; margin-bottom: 1vh;">
+                                About Tidder:
+                            </p>
+                            <p>
+                                Tidder was the biggest project given by my school.<br>
+                                We were supposed to create a forum but we deviated a bit and end up creating an entire social media vastly inspired by Reddit.
+                            </p>
+                            <p>
+                                <br> See it on <a href="https://github.com/Nimajjj/Tidder" target="_blank">GitHub</a>. 
+                            </p>
+
+                            <p> <br> Made with :</p>
+                            <ul>
+                                <li><img class="contact_img" src="image/icon/golang.png" alt="cpp" title="GO"></li>
+                                <li><img class="contact_img" src="image/icon/mysql.png" alt="cpp" title="MYSQL"></li>
+                                <li><img class="contact_img" src="image/icon/js.png" alt="cmake" title="JS"></li>
+                                <li><img class="contact_img" src="image/icon/html-5.png" alt="sdl" title="HTML5"></li>
+                                <li><img class="contact_img" src="image/icon/css.png" alt="love" title="CSS3"></li>
+                            </ul>
+                        </div>
+                        <img src="image/project/tidder_screen.png">
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <h2>Coink - My C++ game engine</h2>
+                    <div>
+                        <div class="desc">
+                            <p style="font-size: 32px; margin-bottom: 1vh;">
+                                About Coink: <br>
+                            </p>
+                            <p>
+                                Coink is one of my personal projects, it is a simple game engine made in C++ using the SDL2 library.<br>
+                                It can actually create physical objects, display sprite and animate them, has a particles system and much more !
+                            </p>
+                            <p>
+                                <br> See it on <a href="https://github.com/Nimajjj/Coink" target="_blank">GitHub</a>. 
+                            </p>
+
+                            <p> <br> Made with :</p>
+                            <ul>
+                                <li><img class="contact_img" src="image/icon/cpp.png" alt="cpp" title="C++"></li>
+                                <li><img class="contact_img" src="image/icon/cmake.png" alt="cmake" title="CMake"></li>
+                                <li><img class="contact_img" src="image/icon/sdl.png" alt="sdl" title="SDL2"></li>
+                                <li><img class="contact_img" src="image/icon/love.png" alt="love" title="LOVE <3"></li>
+                            </ul>
+                        </div>
+                        <img id="coink_img" src="image/project/coink.png">
+                    </div>
+                </div>
+
+                <div class="carousel">
+                    <h2>Project Red - A GO textual RPG</h2>
+                    <div>
+                        <div class="desc">
+                            <p style="font-size: 32px; margin-bottom: 1vh;">
+                                About Project Red: <br>
+                            </p>
+                            <p>
+                                The project red was the final homework given by my school (Ynov) to end our Go journey.<br>
+                                It is a nice textual rpg playable from the terminal.
+                            </p>
+                            <p>
+                                <br> See it on <a href="https://github.com/Nimajjj/Projet-Red" target="_blank">GitHub</a>. 
+                            </p>
+
+                            <p> <br> Made with :</p>
+                            <ul>
+                                <li><img class="contact_img" src="image/icon/golang.png" alt="cpp" title="GO"></li>
+                            </ul>
+                        </div>
+                        
+                        <img src="image/project/projectred.png">
+                    </div>
+                </div>
+
+                <p id="next_bt" class="bt" onclick="next_page()">
+                    next
+                </p>
+            </div>
+        </section>
+
+        <section class="section" data-anchor="intership">
+            <div id="p4">
+                <section>
+
+                </section>
+    
+                <section>
+                    
+                </section>
+            </div>
+        </section>
+
+        <section class="section" data-anchor="contact">
+            <div id="p5">
+                <div class="left">
+                    <h3>You can find me here :</h3>
+                    
+                    <ul>
+                        <li><a target="_blank" href="mailto:benjamin.borello@aol.com"><i class="fa-solid fa-envelope"></i> Email <span style="margin-left: 1vw; font-size: 12px;">(benjamin.borello@aol.com)</span></a></li>
+                        <li><a target="_blank" href="https://github.com/Nimajjj"> <i class="fa-brands fa-github"></i> Github</a></li>
+                        <li><a target="_blank" href="https://www.linkedin.com/in/benjamin-borello-89b562220/"> <i class="fa-brands fa-linkedin"> </i> LinkedIn</a></li>
+                    </ul>
+                </div>
+                <form class="right" action="https://formspree.io/f/moqbqgnp" method="POST">
+                    <h3>You can contact me here :</h3>
+                    <input type="email" name="email" placeholder="Your email*" required>
+                    <input type="tel" name="phone" placeholder="Your phone number">
+                    <textarea name="message" rows="4" placeholder="Your message*" required></textarea>
+                    <div id="g-recaptcha-response" class="g-recaptcha" data-sitekey="6Ldu85UhAAAAADQfjS66G9legyqcivB8NOHW9Qza"></div>
+                    <button type="submit">
+                        Send
+                    </button>
+                    <span style="font-size: 12px; margin-top: 0;">Field marqued with * are required.</span>
+                </form>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
