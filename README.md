@@ -4,6 +4,8 @@
 
 My personal portfolio to track my progress over my development journey.
 
+See it <a href="https://nimajjj.github.io/Portfolio/" target="_blank">here</a>.
+
 ## Version History
 
 * 0.1
