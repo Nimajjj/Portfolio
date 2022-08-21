@@ -394,9 +394,3 @@
     cursor: pointer;
     background-color: rgba(231, 246, 242, 0.25);
 }
-
-/* reCaptcha */
-
-#g-recaptcha-response {
-    display: inline block !important;
-}
