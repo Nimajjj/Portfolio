@@ -264,6 +264,7 @@
 
 #p3 .carousel > div > .desc a {
     color: #0969da;
+    text-decoration: underline;
 }
 
 #p3 .carousel > div > .desc ul {
@@ -287,6 +288,24 @@
 
 #p3 .carousel #coink_img {
     width: 35%;
+}
+
+/* page 4 */
+
+#p4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p4 a {
+    color: #0969da;
+    transition: 0.5s ease;
+    text-decoration: underline;
+}
+
+#p4 a:hover {
+    opacity: 0.5;
 }
 
 
